@@ -1,0 +1,1 @@
+const icLogo = "assets/images/ic_logo.png";
