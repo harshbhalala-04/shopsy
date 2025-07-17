@@ -122,5 +122,4 @@ ThemeData primaryTheme = ThemeData(
       ),
     ),
   ),
-  // shadowColor: ColorUtils.lightIconBackgroundColor,
 );
