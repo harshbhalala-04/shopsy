@@ -13,8 +13,17 @@ class ProductService {
   List<TrendingProduct> getTrendingProductList() {
     return productsList
         .where((json) => json['isTrendingProduct'] == true)
-        .map((json) => TrendingProduct.fromJson(json))
-        .toList();
+        .map((json) {
+      final actualPrice = json['actualPrice'] ?? 0;
+      final salePrice = json['salePrice'] ?? 0;
+      final discountedPercentage = actualPrice != 0
+          ? (((actualPrice - salePrice) / actualPrice) * 100)
+          : 0;
+
+      json['discountPercentage'] = discountedPercentage;
+
+      return TrendingProduct.fromJson(json);
+    }).toList();
   }
 
   ProductDetailDto? getProductDetail(String productId) {
