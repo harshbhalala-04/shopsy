@@ -8,7 +8,7 @@ class ColorUtils {
   static Color dialogBackgroundColor = const Color(0xfff3f6fd);
   static Color secondaryContainerColor = const Color(0xff212134);
   static Color cardColor = const Color(0xffFFFFFF);
-  static Color scaffoldBackgroundColor = const Color(0xffFFFFFF);
+  static Color scaffoldBackgroundColor = const Color(0xffF8F8F8);
   static Color lightPrimaryHeaderTextColor = const Color(0xff212121);
   static Color lightPrimaryBodyTextColor = const Color(0xff000000);
   static Color lightSecondaryBodyTextColor = const Color(0xffFFFFFF);
@@ -24,4 +24,5 @@ class ColorUtils {
   static Color borderColor = const Color(0xff5C5752);
   static Color lightIconBackgroundColor = const Color(0xfff4f6fb);
   static Color infoTextColor = const Color(0xff6E6E6E);
+  static Color lightGreyColor = const Color(0xff909090);
 }
